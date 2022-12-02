@@ -1,0 +1,860 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(1.jpg);
+    width: 100%;
+    height:100vh;
+    display: flex;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.our_rooms{
+    position: absolute;
+    top: 15vh;
+    left: 5%;
+    width: 90%;
+    height: 70vh; 
+    background: #262626;
+    z-index: 3; 
+    display: none;
+
+}
+.leftroom, .rightroom{
+    position: absolute;
+     
+    height: 100%; 
+}
+.leftroom{
+   width: 65%;
+    /*background: #fff;*/
+
+}
+
+
+ #myCarousel{
+
+    position: relative;
+    height:auto;
+    width: 100%;
+    /*margin-top: 20px;*/
+    /*background: #0f0;*/
+    overflow:hidden;
+    /*background-image: url();*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  }
+  .book{
+     position: absolute;
+     top: 60%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+    height:80px;
+    width: 200px;
+    /*background: #0ff;*/
+    border:1px solid #fff;
+    text-align: center;
+    font-size: 2em;
+    font-family: cursive;
+    line-height: 80px;
+    color: #fff;
+  }
+
+
+
+.rightroom{
+    float: right;
+    width: 35%;
+    left:65%;
+    /*background: #ff0;*/
+
+}
+.close{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    /*background: #0ff;*/
+    /*border: 2px solid #fff;*/
+    text-align: center;
+    font-size: 5em;
+    color: #fff;
+    float: right;
+    font-family: cursive;
+    font-weight: bold;
+    line-height: 120px;
+}
+
+.close p{
+    font-size: 2em;
+    margin-top: 15px;
+    color: #fff;
+}
+.roomtitle{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    margin-top: 80px;
+    /*background: #0ff;*/
+    border-bottom: 2px solid #fff;
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    font-family: cursive;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+
+.roomservices{
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    height: calc(100% - 200px);
+    /*background: #0ff;*/
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+    font-family:Akaya Telivigala;
+    /*line-height: 45px; */
+}
+
+.topbar{
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    height: 80px;
+    /*background: #ff0;*/
+    z-index: 2;
+}
+
+
+.right, .left{
+    position: relative;
+    width: 50%;
+    height: 100vh;
+
+}
+.left{
+    float: left;
+    /*background:#fff;*/
+
+}
+.right{
+    float: left;
+    background: -moz-linear-gradient(left, transparent,#000, #000);
+    background: -webkit-linear-gradient(left, transparent,#000, #000);
+
+    /*background: #f00;*/
+}
+
+
+
+.logo{
+    position: relative;
+    margin-left: 20px;
+    margin-top: 10px;
+    background-image: url(logo.png);
+     width: 150px;
+    height: 100%;
+    display: flex;
+
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+
+
+.righted{
+    position: relative;
+    margin-left: 20px;
+    margin-top:100px;
+    /*background-image: url(logo.png);*/
+     width: calc(100% - 20px);
+    height: calc(100% - 100px);
+    display: flex;
+    /*background: #0ff;*/
+    box-shadow: 5px 5px 4px #000;
+}
+
+
+.checked{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    text-align: center;
+
+    float: left;
+    /*background: #fff;*/
+}
+.midcheck{
+    position:absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    float: left;
+    text-align: center;
+
+    /*background: #0ff;*/
+}
+
+
+.explorer{
+    position:absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    /*background: #0ff;*/
+}
+
+
+
+.bookroom{
+    position:absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    font-family:cursive;
+    font-weight: bold;
+    opacity: .8;
+    display: flex;
+    float: left;
+    background: #fff;  
+    color: #000;
+    border:3px solid gold;
+    line-height: 70px; 
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.bookroom p{
+width: 100%;
+height: auto;
+text-align: center;
+}
+
+
+.poptitle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background:#fff; 
+    font-size: 1.7em;
+    text-align: center;
+    font-family:Akaya Telivigala;
+    line-height: 60px; 
+}
+
+.popbase{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 60px);
+    background:#ff0; 
+    font-size: 2em;
+    text-align: center;
+    font-family:Akaya Telivigala;
+    /*color: #fff;*/
+}
+
+.register{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    /*margin-right: 20px;*/
+    width: 240px;
+    height: 45px;
+    font-size: 1.2em;
+    text-align: center;
+    font-family:Akaya Telivigala;
+    line-height: 45px; 
+    background: transparent;
+    border: 1px solid #fff;
+    float: right;
+    cursor: pointer;
+
+}
+
+.sign_up{
+    position: relative;
+    margin: 0;
+    width: 50%;
+    height:100%;
+    background:transparent;
+    float: left;
+    color: #fff;
+}
+
+.log_in{
+    position: relative;
+    margin-right: 0;
+    width:50%;
+    height: 100%;
+    background:#fff;
+    float: right;
+    color: #000;
+}
+
+.sign_up_form{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height:0px;
+    /*background:#0ff;*/
+    float: left;
+    /*color: #fff;*/
+}
+
+.name,.email,.password,.sign_up_button{
+    position: relative;
+    margin-top: 2px;
+    width: 100%;
+    height: 40px;
+    /*background: #f00;*/
+    /*display: none;*/
+    float: left;
+
+}
+
+
+
+.name input,.email input,.password input{
+    position: relative;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    /*background: #f00;*/
+    /*display: none;*/
+
+}
+.email1,.password1,.log_in_button{
+    position: relative;
+    /*margin-top: 2px;*/
+    width: 100%;
+    height: 40px;
+    /*background: #f00;*/
+    display: none;
+    float: left;
+
+}
+
+.email1 input,.password1 input{
+    position: relative;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    /*background: #f00;*/
+    /*display: none;*/
+
+}
+
+
+.sign_up_button input,.log_in_button input{
+     position: relative;
+     margin-top: 10px;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    line-height: 30px;
+    color: #000;
+}
+
+.log_in_form{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height:0px;
+    /*background:#ff0;*/
+    float: left;
+    /*color: #fff;*/
+    /*display: none;*/
+}
+.lefted{
+    position: relative;
+    margin-left: 20px;
+    margin-top:100px;
+    /*background-image: url(logo.png);*/
+     width: calc(100% - 20px);
+    height: calc(100% - 100px);
+    display: flex;
+    /*background: #fff;*/
+    box-shadow: 5px 5px 4px #000;
+}
+.abtcnt{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 50%;
+    width: 50%;
+    height:45px;
+    /*background:gold;*/
+    border-bottom: 1px solid #fff;
+    float: left;
+    /*color: #fff;*/
+     font-size: 1.2em;
+    text-align: center;
+    font-family:Akaya Telivigala;
+    line-height: 45px; 
+}
+.abt{
+    position: relative;
+    margin: 0;
+    width: 50%;
+    height:100%;
+    /*background:#0ff;*/
+    float: left;
+    color: gold;
+    cursor: pointer;
+}
+
+.cnt{
+    position: relative;
+    margin-right: 0;
+    width:50%;
+    height: 100%;
+    /*background:#fff;*/
+    float: right;
+    color: #fff;
+    cursor: pointer;
+}
+
+.abtus{
+   position: absolute;
+   left: 0;
+   top:100px;
+    width:100%;
+    height: 65vh;
+    /*background:#ff0;*/
+    /*float: right;*/
+    color: gold;
+    font-size: 1.2em;
+    text-align: center;
+    /*display: none;*/
+    font-family:Akaya Telivigala;
+
+    
+}
+
+.cntus{
+   position: absolute;
+   left: 0;
+   top:100px;
+    width:100%;
+    height: 65vh;
+    /*background:#0ff;*/
+    /*float: right;*/
+    color: #fff;
+    font-size: 1.4em;
+    text-align: center;
+    display: none;
+    font-family:Akaya Telivigala;
+
+    
+}
+
+.cntus p{
+    margin-top: 100px;
+}
+
+.mailphone{
+   position: absolute;
+   left: 50%;
+   top:40%;
+   transform: translate(-50%, -50%);
+    width:100%;
+    height: 60px; 
+    /*background: #fff;*/
+    color: #fff;
+
+}
+
+.mailus,.phoneus{
+    position: absolute;
+    left: 0;
+    top:0;
+    width:50%;
+    height: 100%; 
+    /*background: #000;*/
+        font-size: 1.2em;
+    text-align: center;
+    /*display: none;*/
+    font-family:Akaya Telivigala;
+    line-height: 60px;
+}
+
+.mailus{
+        /*background: #000;*/
+}
+.phoneus{
+    left: 50%;
+          /*background: #f00;*/
+
+}
+
+
+
+.moreabtctn{
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    float: left;
+    /*background: #fff;*/
+}
+
+.aboutcontact{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    /*background: #000;*/
+}
+
+.populace{
+    position:absolute;
+    top: 60%;
+    left: 5%;
+    width: 93%;
+    height: 40%;
+    display: flex;
+    float: right;
+    background: #0ff;
+    /*visibility: hidden;*/
+}
+
+
+
+
+
+  @media screen and (max-width: 850px) {
+
+.left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    float: left;
+
+}  
+
+.lefted{
+    margin-top:0;
+    height:100%;
+}
+
+  .right{
+    position: absolute;
+    top: 50vh;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    float: left;
+
+}  
+
+
+.leftroom, .rightroom {
+    height: 50%;
+    width: 100%;
+    left: 0;
+}
+
+.rightroom{
+    top:50%;
+}
+
+.roomtitle {
+    width: 70%;
+    left: 15%;
+}
+
+.close{
+    margin-top: 70px;
+
+  }
+.mailphone{
+
+   top:20%;
+
+}
+.cntus p{
+    margin-top: 50px;
+}
+
+.populace {
+    left: 2%;
+    width: 94%;
+}
+
+  }
+
+  
+  @media screen and (max-width: 500px) {
+
+.midcheck{
+    
+    height: 50px;
+
+}
+
+
+.logo {
+    margin-left: 10px;
+    margin-top: 0px;
+    width: 100px;
+    height: 70%;
+}
+
+.register {
+    top: 0px;
+    right: 5px;
+    width: 150px;
+    height: 35px;
+    font-size: 1em;
+    line-height: 35px;
+}
+
+.bookroom{
+  
+    top: 10%;
+   
+    height: 55px;
+  
+    font-size: 1.1em;
+    
+    line-height: 55px;
+    
+
+}
+
+.abtcnt {
+
+    margin-top: 0px;
+    margin-left: 0%;
+    width: 100%;
+   
+}
+
+.abtus {
+    top: 60px;
+    font-size: 1.1em;
+}
+
+.cntus {
+    top: 50px;
+    font-size: .85em;
+}
+
+.poptitle {
+    height: 45px;
+    font-size: 1.5em;
+    line-height: 45px;
+}
+
+
+.roomtitle {
+    height: 60px;
+    margin-top: -5%;
+    font-size: 1.7em;
+    width: 70%;
+    left: 15%;
+}
+
+.roomservices {
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+.our_rooms {
+    top: 10vh;
+    height: 85vh;
+}
+
+.close{
+    margin-top: -10px;
+
+  }
+
+.close p{
+    font-size: 2em;
+    margin-top: 0px;
+    color: #fff;
+
+  }
+.book {
+    height: 60px;
+    width: 150px;
+    font-size: 1.5em;
+    line-height: 60px;
+
+}
+
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+.profile{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    /*margin-right: 20px;*/
+    width: 150px;
+    height: 45px;
+    font-size: 1.2em;
+    text-align: center;
+    font-family:Akaya Telivigala;
+    line-height: 45px; 
+    background: transparent;
+    border: 2px solid #fff;
+    float: right;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.profiledata{
+    position: absolute;
+    top:70px;
+    right: 20px;
+    /*margin-right: 20px;*/
+    width: 150px;
+    height: 0px;
+    background: #0ff;
+    float: right;
+    cursor: pointer;
+    z-index: 3;
+}
+.profilename, .profileemail, .profileage, .logout{
+    display: none;
+}
+.logout{
+    text-align: center;
+}
+.your_rooms{
+    position: absolute;
+    top:20vh;
+    left:0;
+    width: 100%;
+    height: 80vh;
+    
+}
+
+.rooms{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 50%;
+    background: #fff;
+}
+
+.room1,.room2, .room3{
+    position: relative;
+    margin-top:0;
+    margin-left:0;
+    width:33.3%;
+    height: 100%;
+    float: left;
+}
+.rooms img{
+      height:auto;
+    width: 100%;
+    border-right: 3px solid #fff;
+    overflow:hidden;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.roombooking{
+    position: absolute;
+    top:50%;
+    left:0;
+    width: 100%;
+    height: 50%;
+    background: #000;
+    opacity: .8;
+}
+.book_form{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 200px;
+    background: #fff;
+}
+
+#selecting{
+    width: 100%;
+    height: 40px;
+}
+#button1{
+    position: absolute;
+    top:80%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.checkinout{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 150px;
+    background: #0ff;
+    display: none;
+}
+
+.roomtypes{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    font-size: 1.7em;
+    color: #fff;
+    font-weight: bold;
+}

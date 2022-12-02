@@ -1,0 +1,89 @@
+
+// $('.sign_up').mouseover(function(){
+
+//     $('.sign_up_form').animate({height:"200px"}, 500);
+
+// });
+
+// $('.sign_up').mouseout(function(){
+
+//     $('.sign_up_form').animate({height:"0px"}, 500);
+
+// });
+
+
+// $('.log_in').mouseover(function(){
+//     $('.log_in_form').animate({height:"200px"}, 500);
+
+
+// });
+// $('.log_in').mouseout(function(){
+//     $('.log_in_form').animate({height:"0px"}, 500);
+
+
+// });
+
+
+
+$('.sign_up').mouseover(function(){
+    $('.log_in_form').animate({height:"0px"}, 500).fadeOut();
+    $('.sign_up_form').fadeIn().animate({height:"200px"}, 500);
+    $('.name').fadeIn();
+      $('.email').fadeIn();
+        $('.password').fadeIn();
+          $('.sign_up_button').fadeIn();
+
+
+});
+
+
+
+$('.log_in').mouseover(function(){
+    $('.sign_up_form').animate({height:"0px"}, 500).fadeOut();
+    $('.log_in_form').fadeIn().animate({height:"200px"}, 500);
+    $('.email1').fadeIn();
+        $('.password1').fadeIn();
+          $('.log_in_button').fadeIn();
+
+
+
+});
+
+
+
+$('.right').mouseout(function(){
+    $('.sign_up_form').animate({height:"0px"}, 500);
+    $('.log_in_form').animate({height:"0px"}, 500);
+    $('.name').fadeOut();
+      $('.email').fadeOut();
+        $('.password').fadeOut();
+          $('.sign_up_button').fadeOut();
+           $('.email1').fadeOut();
+        $('.password1').fadeOut();
+          $('.log_in_button').fadeOut();
+
+
+});
+
+$('.explorer').click(function(){
+	  $('.our_rooms').fadeIn();
+     
+});
+
+$('.close').click(function(){
+	  $('.our_rooms').fadeOut();
+     
+});
+
+
+$('.abt').click(function(){
+	  $('.cntus').fadeOut();
+	  $('.abtus').fadeIn();
+     
+});
+
+$('.cnt').click(function(){
+	  $('.abtus').fadeOut();
+	  $('.cntus').fadeIn();
+     
+});
